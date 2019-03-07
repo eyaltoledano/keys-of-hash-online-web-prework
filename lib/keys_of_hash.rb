@@ -15,8 +15,6 @@ class Hash
   def keys_of(*argument)
     array = []
     argument.each do |search_value|
-
-
       self.each do |key, value|
         binding.pry
         if self[key] == argument
