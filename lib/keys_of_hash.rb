@@ -13,8 +13,15 @@ require 'pry'
 
 class Hash
   def keys_of(*argument)
-    self.each do |key,value|
-      
+    array = []
+
+    argument.each do |search_value|
+      self.each do |key, value|
+        if self[key] == argument
+          array << argument
+        end
+      end
     end
+    array
   end
 end
