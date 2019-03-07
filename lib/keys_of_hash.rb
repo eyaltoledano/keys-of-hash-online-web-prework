@@ -18,7 +18,7 @@ class Hash
     argument.each do |search_value|
       self.each do |key, value|
         if self[key] == argument
-          array << argument
+          array << key
         end
       end
     end
