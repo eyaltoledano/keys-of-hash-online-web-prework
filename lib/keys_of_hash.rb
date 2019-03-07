@@ -13,10 +13,6 @@ require 'pry'
 
 class Hash
   def keys_of(*argument)
-    array = []
-    self.collect.each do |key,value|
-      array << key if value == argument.first
-    end
-    array
+    
   end
 end
