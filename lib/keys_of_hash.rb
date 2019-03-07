@@ -16,7 +16,6 @@ class Hash
     array = []
     argument.each do |search_value|
       self.each do |key, value|
-        binding.pry
         if self[key] == search_value
           array << key
         end
